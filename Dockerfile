@@ -8,5 +8,5 @@ RUN go build -o homelab-mcp .
 FROM alpine:latest
 WORKDIR /app
 COPY --from=builder /app/homelab-mcp .
-EXPOSE 8081
+EXPOSE 8082
 CMD ["./homelab-mcp"]
